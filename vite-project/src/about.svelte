@@ -3,11 +3,14 @@
   const base = import.meta.env.BASE_URL;
 
   import logo from './assets/_logo.png';
+  import bgPattern from './assets/bg-lowpoly.svg';
+
 
   import whoWeAreImg from './assets/2026/image-20260426-185043-4a1e326e.jpeg';
 
   import placeholderPhoto from './assets/2025/headshots/Alex_Ravagnani_Headshot.jpg';
-  //import Rania from './assets/2027/headshots/haasRania.JPG';
+  import raniaHaas from './assets/2027/headshots/haasRania.jpeg';
+  import stefaniVinny from './assets/2027/headshots/stefaniVinny.jpg'
 
   
   const navLinks = [
@@ -32,11 +35,11 @@
   const stats = [
     { value: '5', label: 'years of IREC/capstone' },
     { value: '40+', label: 'total participated students' },
-    { value: '', label: '' },
-    { value: '', label: '' }
+    { value: '10', label: 'L1s Certified' },
+    { value: '10,000', label: '' }
   ];
 
-  const extraInfoBlurb = 'Anything else here?';
+
 
   //President
   const president = {
@@ -72,10 +75,10 @@
     {
       role: 'Secretary',
       name: 'Rania Haas',
-      photo: placeholderPhoto,
+      photo: raniaHaas,
       contacts: [
-        { label: 'Contact', href: 'mailto:secretary@ucrocketry.org' },
-        { label: 'Contact', href: '#' }
+        { label: 'Contact', href: 'mailto:haasr3@mail.uc.edu' },
+        { label: 'Contact', href: 'https://www.linkedin.com/in/rania-haas/' }
       ]
     }
   ];
@@ -96,10 +99,9 @@
       {
         role: 'Launch Vehicle Member',
         name: 'Vinny Stefani',
-        photo: placeholderPhoto,
+        photo: stefaniVinny,
         contacts: [
-          { label: 'Contact', href: '#' },
-          { label: 'Contact', href: '#' }
+          { label: 'LinkedIn', href: 'www.linkedin.com/in/vincentastefani' },
         ]
       },
       {
@@ -172,12 +174,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+    href="https://fonts.google.com/specimen/IBM+Plex+Sans+Devanagari?lang=en_Latn&preview.lang=en_Latn&categoryFilters=Feeling:%2FExpressive%2FBusiness"
     rel="stylesheet"
   />
 </svelte:head>
 
-<div class="page">
+<div class="page" style="background-image: url({bgPattern})">
+
   <header class="site-header">
     <a class="logo-badge" href="#home" aria-label="Home">
       <img src={logo} alt="UC Rocketry Club logo" />
@@ -229,9 +232,6 @@
             {/if}
           </div>
         {/each}
-      </div>
-      <div class="info-box extra-info-box">
-        <p>{extraInfoBlurb}</p>
       </div>
     </section>
 
@@ -332,7 +332,11 @@
   }
 
   .page {
-    background: var(--charcoal-dark);
+    background-color: var(--charcoal-dark);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: var(--off-white);
     font-family: 'Ubuntu Sans Mono', ui-monospace, monospace;
     font-optical-sizing: auto;
@@ -342,6 +346,7 @@
     padding-bottom: 3rem;
   }
 
+  /* ---------- Header (matches Home.svelte) ---------- */
   .site-header {
     position: sticky;
     top: 0;
@@ -409,9 +414,11 @@
   }
 
   main {
-    max-width: 1200px;
+    position: relative;
+    z-index: 1;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 2.5rem 2rem 0;
+    padding: 2.5rem 1.5rem 0;
   }
 
   h1,
@@ -440,17 +447,22 @@
     display: block;
   }
 
+  /* ---------- Who We Are ---------- */
   .who-we-are {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns: 1fr 1.6fr;
     gap: 2rem;
-    align-items: start;
+    align-items: stretch;
+    /* fill the first screen under the sticky header, like the wireframe */
+    min-height: calc(100vh - 10rem);
   }
 
   .wwa-card {
     background: var(--accent-red);
     border-radius: 20px;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .wwa-card h1 {
@@ -461,13 +473,27 @@
   }
 
   .wwa-photo {
-    aspect-ratio: 1 / 1.15;
+    flex: 1 1 auto;
+    min-height: 24rem;
+  }
+
+  .irec-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
   }
 
   .irec-column h2 {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
     color: var(--off-white);
+  }
+
+  .irec-column .info-box {
+    flex: 1 1 0;
+    margin-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.05rem;
   }
 
   .info-box {
@@ -493,6 +519,7 @@
     }
   }
 
+  /* ---------- Stats ---------- */
   .stats-section {
     margin-top: 3rem;
   }
@@ -542,6 +569,7 @@
     text-align: center;
   }
 
+  /* ---------- Meet the Team outer container ---------- */
   .meet-team-outline {
     margin-top: 3rem;
     border: 2px solid var(--off-white);

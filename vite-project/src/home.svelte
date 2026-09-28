@@ -3,6 +3,8 @@
 
   const base = import.meta.env.BASE_URL;
 
+  import bgPattern from './assets/bg-lowpoly.svg';
+
 
   import logo from './assets/_logo.png';
 
@@ -60,7 +62,7 @@
   if (e.key === 'ArrowRight') nextSlide();
 }} />
 
-<div class="page">
+<div class="page" style="background-image: url({bgPattern})">
   <header class="site-header">
     <a class="logo-badge" href="#home" aria-label="Home">
       <img src={logo} alt="UC Rocketry Club logo" />

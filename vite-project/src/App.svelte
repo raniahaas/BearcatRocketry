@@ -56,7 +56,7 @@
   <About {navigate} />
 {:else if currentroute === '/history'}
   <History {navigate} />
-{:else if currentroute === '/sponsors'}
+{:else if currentroute === '/sponsorship'}
   <Sponsorship {navigate} />
 {:else if currentroute === '/contact'}
   <Contact {navigate} />
