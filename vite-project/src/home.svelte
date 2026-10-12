@@ -76,8 +76,8 @@
   ];
 
   const location = {
-    name: 'Where We\u2019re Located',
-    lines: ['Club address line 1', 'Cincinnati, OH 452XX']
+    name: 'Bearcat Rocketry Capstone',
+    lines: ['2600 Clifton Ave', 'Cincinnati, OH 45221']
   };
 
   const hrefFor = (path) => base.slice(0, -1) + path;
@@ -116,7 +116,7 @@
 <div class="page" style="background-image: url({bgPattern})">
   <header class="site-header">
     <a class="logo-badge" href="#home" aria-label="Home">
-      <img src={logo} alt="UC Rocketry Club logo" />
+      <img src={logo} alt="UC Capstone logo" />
     </a>
 
     <nav class="site-nav" aria-label="Primary">
@@ -182,7 +182,7 @@
         on:click|preventDefault={() => navigate('/contact')}
       >Contact Us</a>
     </div>
-    <p class="copyright">&copy; UC Rocketry Club</p>
+    <p class="copyright">&copy; University of Cincinnati's Bearcat Rocketry Capstone - Developed by Rania Haas</p>
   </footer>
 
   <slot />
@@ -279,7 +279,7 @@
   .hero {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 8;
+    aspect-ratio: 16 / 6.3;
     overflow: hidden;
     background: #000;
   }

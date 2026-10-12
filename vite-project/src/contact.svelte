@@ -23,7 +23,7 @@
     { title: 'LinkedIn', icon: linkedinIcon, href: 'https://www.linkedin.com/in/uc-seds-queen-city-rocketry-23a871262/' }
   ];
 
-  const address = 'Club address goes here';
+  const address = 'Find us on Campus at: 2600 Clifton Ave ';
   const mapEmbedUrl = 'https://www.google.com/maps?q=University+of+Cincinnati&output=embed';
 </script>
 
@@ -67,7 +67,7 @@
 
         {#if address}
           <div class="contact-card address-card">
-            <span class="card-title">Address</span>
+            <span class="card-title">Visit us on Campus</span>
             <span>{address}</span>
           </div>
         {/if}
@@ -217,7 +217,7 @@
     color: #222;
     border: 1px solid #b8b8b8;
     border-radius: 4px;
-    min-height: 10rem;
+    min-height: 17rem;
     display: flex;
     flex-direction: column;
     align-items: center;
