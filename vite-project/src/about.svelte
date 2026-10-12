@@ -22,11 +22,11 @@
 
   
   const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'History', href: '#history' },
-    { label: 'Sponsorship', href: '#sponsorship' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'Home', path: '/' },
+    { label: 'About', path: '/about' },
+    { label: 'History', path: '/history' },
+    { label: 'Sponsorship', path: '/sponsorship' },
+    { label: 'Contact', path: '/contact' }
   ];
 
   //Edit inital blurb here for 'What is IREC'
@@ -182,7 +182,7 @@
         {#each navLinks as link}
           <li>
             <a
-              href={base.slice(0, -1) + link.path}
+              href={base + link.path}
               class:current={link.label === 'About'}
               on:click|preventDefault={() => navigate(link.path)}
             >{link.label}</a>

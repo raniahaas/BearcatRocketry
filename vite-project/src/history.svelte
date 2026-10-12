@@ -318,7 +318,7 @@
         {#each navLinks as link}
           <li>
             <a
-              href={base.slice(0, -1) + link.path}
+              href={base + link.path}
               class:current={link.label === 'History'}
               on:click|preventDefault={() => navigate(link.path)}
             >{link.label}</a>

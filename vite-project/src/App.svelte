@@ -12,7 +12,6 @@
    * 
    * 
   */
-  import Footer from './footer.svelte';
   import Home from './home.svelte';
   import About from './about.svelte';
   import History from './history.svelte';

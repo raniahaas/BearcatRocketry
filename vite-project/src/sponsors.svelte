@@ -1,20 +1,19 @@
 <script>
-  // Passed down from App.svelte's router.
   export let navigate;
   const base = import.meta.env.BASE_URL;
 
-  // Low-poly geometric background used behind the whole page
   import bgPattern from './assets/bg-lowpoly.svg';
 
-  // --- Assets -----------------------------------------------------------
   import logo from './assets/_logo.png';
   import ucFoundationLogo from './assets/UCF_Logo_BlackRed.png';
 
-  // Sponsor logos — add or remove entries freely, the row adapts to
-  // however many you provide. Each needs its own imported logo image.
-  import sponsorLogo1 from './assets/UCF_Logo_BlackRed.png';
-  import sponsorLogo2 from './assets/UCF_Logo_BlackRed.png';
-  import sponsorLogo3 from './assets/UCF_Logo_BlackRed.png';
+  import sponsorLogo1 from './assets/logos/SolidWorks_Logo.jpeg';
+  import sponsorLogo2 from './assets/logos/ansys_logo.png';
+  import sponsorLogo3 from './assets/logos/iSPACE.jpg';
+  import sponsorLogo4 from './assets/logos/CEAS.jpeg';
+
+  //To update the packet, update the Public file and the according name
+  const pdfUrl = `${import.meta.env.BASE_URL}SponsorshipPacket.pdf`;
 
   const navLinks = [
     { label: 'Home', path: '/' },
@@ -24,17 +23,14 @@
     { label: 'Contact', path: '/contact' }
   ];
  
-  const tiersBlurb =
-    'Sponsorship tiers and what each level includes go here — benefits, ' +
-    'recognition, and how funds support the team\u2019s builds and travel to competition.';
- 
-  // Where the UC Foundation "LINK" button should send donors.
+  //Current URL for donations
   const donationLink = 'https://foundation.uc.edu/donate/SpaceportCup';
  
   const sponsors = [
-    { name: 'Sponsor Name', logo: sponsorLogo1, url: '#' },
-    { name: 'Sponsor Name', logo: sponsorLogo2, url: '#' },
-    { name: 'Sponsor Name', logo: sponsorLogo3, url: '#' }
+    { name: 'SolidWorks', logo: sponsorLogo1, url: 'https://www.solidworks.com/' },
+    { name: 'Ansyis', logo: sponsorLogo2, url: 'https://ansys.synopsys.com/' },
+    { name: 'iSPACE', logo: sponsorLogo3, url: 'https://ispacestem.org/' },
+    { name: 'UC - College of Engineering and Applied Sciences', logo: sponsorLogo4, url :'https://www.ceas.uc.edu/'}
   ];
 </script>
  
@@ -49,7 +45,7 @@
         {#each navLinks as link}
           <li>
             <a
-              href={base.slice(0, -1) + link.path}
+              href={base + link.path}
               class:current={link.label === 'Sponsorship'}
               on:click|preventDefault={() => navigate(link.path)}
             >{link.label}</a>
@@ -82,19 +78,58 @@
     <!-- ---------- Interested in Sponsoring? ---------- -->
     <section class="red-panel sponsoring-panel">
       <h2 class="panel-heading">Interested in Sponsoring?</h2>
- 
+
       <div class="sponsoring-content">
         <div class="info-box tiers-box">
-          <p>{tiersBlurb}</p>
-        </div>
- 
-        <div class="side-column">
-          <div class="white-box foundation-box">
-            <img src={ucFoundationLogo} alt="University of Cincinnati Foundation" />
+          <div class="tiers-wrapper">
+          
+            <!--Edits for tier names and bennefits-->
+            <div class="tiers-grid">
+            <div class="info-box tier-box">
+              <div class="tier-heading">Bronze</div>
+              <div class="tier-heading">$100-499</div>
+              <div class="tier-line">Invitation to technical reviews</div>
+              <div class="tier-line">Logo on website</div>
+              <div class="tier-line">Logo on t‑shirt</div>
+            </div>
+
+            <div class="info-box tier-box">
+              <div class="tier-heading">Silver</div>
+              <div class="tier-heading">$500-2,999</div>
+              <div class="tier-line">Invitation to technical reviews</div>
+              <div class="tier-line">Logo on website and t‑shirt</div>
+              <div class="tier-line">Social media benefits (Instagram & LinkedIn)</div>
+            </div>
+
+            <div class="info-box tier-box">
+              <div class="tier-heading">Gold</div>
+              <div class="tier-heading">$3,000+</div>
+              <div class="tier-line">Invitation to test launches</div>
+              <div class="tier-line">Extra‑large logo on rocket</div>
+              <div class="tier-line">Extra‑large logo on t‑shirt</div>
+              <div class="tier-line">Social media benefits (Instagram & LinkedIn)</div>
+            </div>
           </div>
-          <a class="white-box link-box" href={donationLink} target="_blank" rel="noreferrer">
-            View the UC's Foundation page here!
+          </div>
+        </div>
+
+        <div class="side-column">
+
+          <!-- Donation Link -->
+          <a
+            class="white-box foundation-box"
+            href={donationLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={ucFoundationLogo} alt="University of Cincinnati Foundation" />
           </a>
+
+          <!-- Sponsorship Packet -->
+          <a class="white-box link-box" href={pdfUrl} target="_blank" rel="noreferrer">
+            View our Sponsorship Packet here!
+          </a>
+
         </div>
       </div>
     </section>
@@ -246,11 +281,6 @@
     align-items: center;
   }
  
-  .info-box p {
-    margin: 0;
-    line-height: 1.5;
-  }
- 
   /* ---------- Interested in Sponsoring? ---------- */
   .sponsoring-content {
     display: flex;
@@ -318,5 +348,42 @@
       max-width: 15rem;
     }
   }
+
+  /* ----- TIERS ------ */
+  .tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .tier-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+
+  }
+
+  .tier-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent-red);
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+
+  .tier-line {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+
+  @media (max-width: 800px) {
+    .tiers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
 </style>
  
