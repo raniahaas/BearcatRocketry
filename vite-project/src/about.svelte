@@ -6,10 +6,10 @@
   import bgPattern from './assets/bg-lowpoly.svg';
 
 
-  import whoWeAreImg from './assets/2026/image-20260426-185043-4a1e326e.jpeg';
+  import whoWeAreImg from './assets/2025/IMG_3773.jpeg';
 
-  import placeholderPhoto from './assets/2025/headshots/Alex_Ravagnani_Headshot.jpg';
   import raniaHaas from './assets/2027/headshots/haasRania.jpeg';
+  import raniaHaas2 from './assets/2027/headshots/raniaHaas2.jpeg';
   import stefaniVinny from './assets/2027/headshots/stefaniVinny.jpg'
   import landryDanielson from './assets/2027/headshots/DanielsonLandry.png';
   import danielHerzog from './assets/2027/headshots/herzogDaniel.jpeg';
@@ -63,7 +63,7 @@
       name: 'Landry Danielson',
       photo: landryDanielson,
       contacts: [
-        { label: 'Contact', href: 'mailto:daniell9@mail.uc.edu' },
+        { label: '| Contact', href: 'mailto:daniell9@mail.uc.edu' },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/landry-danielson/' }
       ]
     },
@@ -73,7 +73,7 @@
       name: 'Daniel Herzog',
       photo: danielHerzog,
       contacts: [
-        { label: 'Contact', href: 'mailto:herzogdm@mail.uc.edu' },
+        { label: '| Contact', href: 'mailto:herzogdm@mail.uc.edu' },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/daniel-herzog02/' }
       ]
       },{
@@ -81,7 +81,7 @@
         name: 'Rania Haas',
         photo: raniaHaas,
         contacts: [
-          { label: 'Contact', href: 'mailto:haasr3@mail.uc.edu' },
+          { label: '| Contact', href: 'mailto:haasr3@mail.uc.edu' },
           { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rania-haas/' }
         ]
       }
@@ -96,8 +96,8 @@
       name: 'Will Jackson',
       photo: willJackson,
       contacts: [
-        { label: 'Contact', href: 'mailto:jacksow9@mail.uc.edu' },
-        { label: 'Contact', href: 'https://www.linkedin.com/in/william-tjackson/' }
+        { label: '| Contact', href: 'mailto:jacksow9@mail.uc.edu' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/william-tjackson/' }
       ]
     },
     members: [
@@ -106,7 +106,7 @@
         name: 'Vinny Stefani',
         photo: stefaniVinny,
         contacts: [
-          { label: 'LinkedIn', href: 'www.linkedin.com/in/vincentastefani' },
+          { label: '| Contact', href: 'www.linkedin.com/in/vincentastefani' },
         ]
       },
       {
@@ -114,7 +114,7 @@
         name: 'Allayna Backowski',
         photo: allaynaBackowski,
         contacts: [
-          { label: 'Contact', href: 'https://www.linkedin.com/in/allayna-backowski-85302a251/' }
+          { label: '| Contact', href: 'https://www.linkedin.com/in/allayna-backowski-85302a251/' }
         ]
       },
       {
@@ -122,7 +122,7 @@
         name: 'Ross Scully',
         photo: rossScully,
         contacts: [
-          { label: 'Contact', href: 'https://www.linkedin.com/in/ross-scully-932632253/' }
+          { label: '| Contact', href: 'https://www.linkedin.com/in/ross-scully-932632253/' }
         ]
       },
       {
@@ -130,7 +130,7 @@
         name: 'Grayson Razavi',
         photo: graysonRazavi,
         contacts: [
-          { label: 'Contact', href: 'https://www.linkedin.com/in/grayson-reza-razavi/' }
+          { label: '| Contact', href: 'https://www.linkedin.com/in/grayson-reza-razavi/' }
         ]
       }
     ]
@@ -143,17 +143,17 @@
       name: 'Aidan Beachler',
       photo: aidanBeachler,
       contacts: [
-        { label: 'Contact', href: 'mailto:beachlan@mail.uc.edu' },
-        { label: 'Contact', href: 'https://www.linkedin.com/in/aidan-beachler/' }
+        { label: '| Contact', href: 'mailto:beachlan@mail.uc.edu' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aidan-beachler/' }
       ]
     },
     members: [
       {
         role: 'Payload Member',
         name: 'Rania Haas',
-        photo: raniaHaas,
+        photo: raniaHaas2,
         contacts: [
-          { label: 'Contact', href: 'https://www.linkedin.com/in/rania-haas/' }
+          { label: '| Contact', href: 'https://www.linkedin.com/in/rania-haas/' }
         ]
       },
       {
@@ -161,7 +161,7 @@
         name: 'Aidan Eliason',
         photo: aidanEliason,
         contacts: [
-          { label: 'Contact', href: 'https://www.linkedin.com/in/aidaneliason/' }
+          { label: '| Contact', href: 'https://www.linkedin.com/in/aidaneliason/' }
         ]
       },
     ]

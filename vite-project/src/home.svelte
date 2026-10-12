@@ -20,11 +20,19 @@
   import heroImg1 from './assets/2024/2024_1.jpg';
   import heroImg2 from './assets/2024/2024_2.jpg';
   import heroImg3 from './assets/2025/2025_1.jpg';
+  import heroImg4 from './assets/2025/Picture1.jpg';
+
+  //Alternate pictures from the club
+  import clubHero1 from './assets/20251029_224857000_iOS.jpg';
+  import clubHero2 from './assets/20251106_004800000_iOS.jpg';
 
   const slides = [
     { src: heroImg1, title: 'Bearcat Rocketry' },
     { src: heroImg2, title: 'IREC 2027' },
-    { src: heroImg3, title: 'Built By The Team' }
+    { src: heroImg3, title: 'Bearcat Rocketry' },
+    { src: heroImg4, title: 'Bearcat Rocketry'},
+    { src: clubHero1, title: 'Bearcat Rocketry'},
+    { src: clubHero2, title: 'Bearcat Rocketry'}
   ];
 
   const navLinks = [

@@ -6,7 +6,7 @@
   import logo from './assets/_logo.png';
 
   //2026
-  import group2026 from './assets/2026/image-20260426-185043-4a1e326e.jpeg';
+  import group2026 from './assets/2026/IMG_0150.png';
   import SophieStrawbrdige from './assets/2026/headshots/Sophie_Strawbridge_Headshot.png';
   import NickolasHann from './assets/2026/headshots/Nicholas_Hann_Headshot.jpg';
   import Matthew_Cromwell from './assets/2026/headshots/Matthew_Cromwell_Headshot.jpg';
@@ -79,63 +79,58 @@
       year: '2025-2026',
       historyImage: group2026,
       historyText:
-        'Information on the club\u2019s 2025-2026 season goes here — competitions attended, ' +
-        'the rocket built, and any milestones or results worth calling out.',
+        'With intention to compete at IREC\u2019s 2026 competition, President and Lead Sophie Strawbrdige lead the capstone to enter in the COTS 10,000 ft class, similar to 2025. With sponsorship from Rhinegeist Brewery, the payload to be demonstrated was to determine the effects of germentaiton of wheat after a flight. ' +
+        ' However, with lact of avaliable members for the competition, the group pulled out and instead continued through the project similarly to IREC, and launched their rocket locally at WSR.' +
+        ' With an electronics malfunction, the final rocket CATOed and set an even higher standard of routine proceedures for the capstone moving forward.',
       president: makeMember('President & Team Lead', {
         name: 'Sophie Strawbridge',
         photo: SophieStrawbrdige,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'Email', href: 'mailto:strawbridge10@gmail.com' },
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/sophiestrawbridge/' }
         ]
       }),
       roles: [
         makeMember('Vice-President', {
-        name: 'Nicholas Hanh',
+        name: 'Nicholas Hann',
         photo: NickolasHann,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nicholas-p-hann/' }
         ]
       }),
         makeMember('Secretary' , {
         name: 'Korianna Rosenthal',
         photo: KoriannaRosenthal,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/koriannarosenthal/' }
         ]
       }),
         makeMember('Treasurer', {
         name: 'Dhyan Patel',
         photo: DhyanPat,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pateldhyan/' }
         ]
       }),
         makeMember('Saftey Officer', {
         name: 'Madison Detherage',
         photo: MadisonDetherage,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/madison-detherage/' }
         ]
       }),
         makeMember('Launch Vehicle Lead' , {
         name: 'Matthew Cromwell',
         photo: Matthew_Cromwell,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/matthewcromwell/' }
         ]
       }),
         makeMember('Payload Lead', {
         name: 'Connor Haar',
         photo: ConnorHaar,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/connorhaar/' }
         ]
       }),
       ]
@@ -145,14 +140,13 @@
       year: '2024-2025',
       historyImage: group2025,
       historyText:
-        '2024 IREC description, ' +
-        'cont.',
+        'The capstone class of 2025 was the first to prove themselves and compete at the new IREC competition under the leadership of Pierce Elliot. Similar to all other given years, they competed in the COTS 10,000ft class with their sights set on winning the overall competiton. The flight included live video streaming with audio as well as an experiment in the payload to determine the amount of cells in several forms of yeast post flight.' +
+        'At the Spring CEAS Expo, the team was able to win first place for the College of Engineering and Applied Sciences! As an overall, the team placed 22nd in the COTS category and 35th overall. Their rocket narrowly passed their goal threshold of 10,000 ft at a total of 10,245 ft. This was likely overshot to OpenRocket estimations rather than other applications such as RocketPy, and set a wonderful standard for the 2026 year to beat!',
       president: makeMember('Project Manager', {
-        name: 'Piearce Elliot',
+        name: 'Pierce Elliot',
         photo: PierceElliot,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pierce-elliott-d/' }
         ]
       }),
       roles: [
@@ -160,64 +154,56 @@
         name: 'Ben Hunt',
         photo: BenHunt,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ben-hunt-7526a0216/' }
         ]
       }),
         makeMember('Payload Lead' ,  {
         name: 'Matt Boller',
         photo: MattBoller,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mattboller1/' }
         ]
       }),
         makeMember('Avionics' , {
         name: 'Derrick Hollins',
         photo: DerekHollins,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/derrickhollins/' }
         ]
       }),
         makeMember('Payload Structure', {
         name: 'Alex Ravagnani',
         photo: AlexRavagani,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alexander-rav/' }
         ]
       }),
         makeMember('LV Structures & Sim', {
         name: 'Christian Dierksheide',
         photo: ChristianDierksheide,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/christian-dierksheide/' }
         ]
       }),
         makeMember('Payload Electronics', {
         name: 'Jeff Harper',
         photo: JefferyHarper,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jeffrey-harper-892354207/' }
         ]
       }),
         makeMember('LV Structures & Sim' , {
         name: 'Collin Gerwe',
         photo: CollinGerwe,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/collingerwe2002/' }
         ]
       }),
         makeMember('LV Build', {
-        name: 'Zak Upton',
+        name: 'Zak Upson',
         photo: ZakUpson,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/zak-upson/' }
         ]
       }),
       ]
@@ -226,14 +212,13 @@
       year: '2023-2024',
       historyImage: group2024,
       historyText:
-        'Information on the club\u2019s 2023-2024 season goes here — competitions attended, ' +
-        'the rocket built, and any milestones or results worth calling out.',
+        'The class of 2024 participated in the Students for Exploration and Development of Space (SEDS) in the Spaceport Cup of America, now IREC, under leadership and guidance of Ethan McCowan. The group competed flying a COTS motor to 10,000 ft carrying an 8.8 lb payload.' +
+        'Local tests of their rocket placed them overshooting their target apogee by ~500ft at 10,497 feet. Their payload end up weighing around 10.05 lbs and ejects separately to the main and drouge parachutes around 0.5 seconds of hitting apogee. ',
       president: makeMember('Team Lead' , {
         name: 'Ethan McCowan',
         photo: EthanMcCowan,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ethan-mccowan/' }
         ]
       }),
       roles: [
@@ -241,64 +226,56 @@
         name: 'Kyle Brown',
         photo: KyleBrown,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kyl3br0wn/' }
         ]
       }),
         makeMember('Avionics Lead', {
         name: 'SethPlantz',
         photo: SethPlantz,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/seth-plantz-0a79951a2/' }
         ]
       }),
         makeMember('Structures Member', {
         name: 'Harrison Stoelting',
         photo: HarrisonStoelting,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/harrison-stoelting/' }
         ]
       }),
         makeMember('Structures Member', {
         name: 'Alex Hulteen',
         photo: AlexHulteen,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alex-hulteen-28a021202/' }
         ]
       }),
         makeMember('Structures Member', {
         name: 'Grant Miller',
         photo: GrantMiller,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/grant-miller-hsp/' }
         ]
       }),
         makeMember('Payload Member', {
         name: 'Carson Billy',
         photo: CarsonBilly,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/carsonbilly/' }
         ]
       }),
       makeMember('Payload Member', {
         name: 'Anders Setty',
         photo: AndersSetty,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anders-setty/' }
         ]
       }),
       makeMember('Payload Member', {
         name: 'Evan Krentx',
         photo: EvanKrentz,
         contacts: [
-          { label: 'Email', href: 'mailto:president@ucrocketry.org' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/janedoe' }
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/evan-krentz/' }
         ]
       }),
       ]
