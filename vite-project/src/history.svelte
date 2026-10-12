@@ -547,7 +547,7 @@
 
   .team-content {
     display: flex;
-    gap: 1.75rem;
+    gap: 1.35rem;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -561,7 +561,7 @@
   }
 
   .president-card {
-    width: 19rem;
+    width: 25rem;
   }
 
   .president-card .photo-box {
@@ -573,7 +573,7 @@
   .role-grid {
     flex: 1 1 auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(6.5rem, 8.5rem));
+    grid-template-columns: repeat(3, minmax(10.5rem, 8.5rem));
     gap: 1.25rem 1.75rem;
   }
 

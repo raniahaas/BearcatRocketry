@@ -356,12 +356,13 @@
     color: var(--off-white);
     text-align: center;
     padding: 5rem 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .numbers h2 {
     color: var(--off-white);
     margin-bottom: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .numbers-row {
@@ -516,6 +517,7 @@
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1.75rem;
+    margin-top: 1.75rem;
   }
 
   .red-panel {
@@ -572,9 +574,10 @@
 
 .member-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(5, minmax(1rem, 1fr));
   justify-items: center;
   align-items: start;
+  gap: -2.0rem;
 }
 
 /*Cards */
