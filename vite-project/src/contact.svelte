@@ -27,15 +27,6 @@
   const mapEmbedUrl = 'https://www.google.com/maps?q=University+of+Cincinnati&output=embed';
 </script>
 
-<svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet"
-  />
-</svelte:head>
-
 <div class="page" style="background-image: url({bgPattern})">
   <header class="site-header">
     <a class="logo-badge" href="#home" aria-label="Home">
@@ -112,7 +103,6 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: var(--off-white);
-    font-family: 'Ubuntu Sans Mono', ui-monospace, monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -159,7 +149,6 @@
   .site-nav a {
     color: var(--off-white);
     text-decoration: none;
-    font-family: 'Ubuntu Sans Mono', ui-monospace, monospace;
     font-weight: 500;
     font-size: 1.05rem;
     letter-spacing: 0.02em;
@@ -198,7 +187,6 @@
   }
 
   h2 {
-    font-family: 'Ubuntu Sans Mono', ui-monospace, monospace;
     font-weight: 700;
     margin: 0;
   }

@@ -11,6 +11,14 @@
   import placeholderPhoto from './assets/2025/headshots/Alex_Ravagnani_Headshot.jpg';
   import raniaHaas from './assets/2027/headshots/haasRania.jpeg';
   import stefaniVinny from './assets/2027/headshots/stefaniVinny.jpg'
+  import landryDanielson from './assets/2027/headshots/DanielsonLandry.png';
+  import danielHerzog from './assets/2027/headshots/herzogDaniel.jpeg';
+  import willJackson from './assets/2027/headshots/jacksonWilliam.jpeg';
+  import allaynaBackowski from './assets/2027/headshots/backowskiAllayna.jpeg';
+  import rossScully from './assets/2027/headshots/scullyRoss.jpeg';
+  import graysonRazavi from './assets/2027/headshots/razaviGrayson.png';
+  import aidanBeachler from './assets/2027/headshots/beachlerAidan.jpeg';
+  import aidanEliason from './assets/2027/headshots/eliasonAidan.png';
 
   
   const navLinks = [
@@ -32,67 +40,64 @@
     'UC Bearcat Capstone will be competing in the 2027 IREC competion 10,000ft COTS class while additionally participating in the ' +
     'additional provided challenges of live telemetary data, live video streaming during launch, and payload challenge for ingenuity and industry relavance.';
 
-  const stats = [
-    { value: '5', label: 'years of IREC/capstone' },
-    { value: '40+', label: 'total participated students' },
-    { value: '10', label: 'L1s Certified' },
-    { value: '10,000', label: '' }
+  // Stats
+  const numbers = [
+    { value: '5', label: 'YEARS OF IREC' },
+    { value: '40+', label: 'STUDENTS' },
+    { value: '3', label: 'SUB-TEAMS' },
+    { value: '10+', label: 'PARTNERS' }
   ];
 
 
 
   //President
   const president = {
-    role: 'President',
-    name: 'Landry Danielson',
-    photo: placeholderPhoto,
-    contacts: [
-      { label: 'Contact', href: 'mailto:president@ucrocketry.org' },
-      { label: 'Contact', href: '#' }
-    ]
+    
   };
 
-  //Executibe Board, excluding president
-  const execBoard = [
-    {
+  //Exec Board, excluding president
+  const execBoard = {
+    title: 'Executive Board',
+    lead: {
+      role: 'President',
+      name: 'Landry Danielson',
+      photo: landryDanielson,
+      contacts: [
+        { label: 'Contact', href: 'mailto:daniell9@mail.uc.edu' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/landry-danielson/' }
+      ]
+    },
+    members: [
+      {
       role: 'Treasurer',
       name: 'Daniel Herzog',
-      photo: placeholderPhoto,
+      photo: danielHerzog,
       contacts: [
-        { label: 'Contact', href: 'mailto:treasurer@ucrocketry.org' },
-        { label: 'Contact', href: '#' }
+        { label: 'Contact', href: 'mailto:herzogdm@mail.uc.edu' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/daniel-herzog02/' }
       ]
-    },
-    {
-      role: 'Project Lead',
-      name: 'First Last',
-      photo: placeholderPhoto,
-      contacts: [
-        { label: 'Contact', href: 'mailto:projectlead@ucrocketry.org' },
-        { label: 'Contact', href: '#' }
-      ]
-    },
-    {
-      role: 'Secretary',
-      name: 'Rania Haas',
-      photo: raniaHaas,
-      contacts: [
-        { label: 'Contact', href: 'mailto:haasr3@mail.uc.edu' },
-        { label: 'Contact', href: 'https://www.linkedin.com/in/rania-haas/' }
-      ]
-    }
-  ];
+      },{
+        role: 'Secretary',
+        name: 'Rania Haas',
+        photo: raniaHaas,
+        contacts: [
+          { label: 'Contact', href: 'mailto:haasr3@mail.uc.edu' },
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rania-haas/' }
+        ]
+      }
+    ]
+  };
 
   //Launch Vechile Members
   const launchVehicleTeam = {
     title: 'Launch Vehicle',
     lead: {
       role: 'Launch Vehicle Lead',
-      name: 'William Jackson',
-      photo: placeholderPhoto,
+      name: 'Will Jackson',
+      photo: willJackson,
       contacts: [
-        { label: 'Contact', href: 'mailto:lv-lead@ucrocketry.org' },
-        { label: 'Contact', href: '#' }
+        { label: 'Contact', href: 'mailto:jacksow9@mail.uc.edu' },
+        { label: 'Contact', href: 'https://www.linkedin.com/in/william-tjackson/' }
       ]
     },
     members: [
@@ -107,28 +112,25 @@
       {
         role: 'Launch Vehicle Member',
         name: 'Allayna Backowski',
-        photo: placeholderPhoto,
+        photo: allaynaBackowski,
         contacts: [
-          { label: 'Contact', href: '#' },
-          { label: 'Contact', href: '#' }
+          { label: 'Contact', href: 'https://www.linkedin.com/in/allayna-backowski-85302a251/' }
         ]
       },
       {
         role: 'Launch Vehicle Member',
         name: 'Ross Scully',
-        photo: placeholderPhoto,
+        photo: rossScully,
         contacts: [
-          { label: 'Contact', href: '#' },
-          { label: 'Contact', href: '#' }
+          { label: 'Contact', href: 'https://www.linkedin.com/in/ross-scully-932632253/' }
         ]
       },
       {
         role: 'Launch Vehicle Member',
         name: 'Grayson Razavi',
-        photo: placeholderPhoto,
+        photo: graysonRazavi,
         contacts: [
-          { label: 'Contact', href: '#' },
-          { label: 'Contact', href: '#' }
+          { label: 'Contact', href: 'https://www.linkedin.com/in/grayson-reza-razavi/' }
         ]
       }
     ]
@@ -139,45 +141,34 @@
     lead: {
       role: 'Payload Lead',
       name: 'Aidan Beachler',
-      photo: placeholderPhoto,
+      photo: aidanBeachler,
       contacts: [
-        { label: 'Contact', href: 'mailto:payload-lead@ucrocketry.org' },
-        { label: 'Contact', href: '#' }
+        { label: 'Contact', href: 'mailto:beachlan@mail.uc.edu' },
+        { label: 'Contact', href: 'https://www.linkedin.com/in/aidan-beachler/' }
       ]
     },
     members: [
       {
         role: 'Payload Member',
         name: 'Rania Haas',
-        photo: placeholderPhoto,
+        photo: raniaHaas,
         contacts: [
-          { label: 'Contact', href: '#' },
-          { label: 'Contact', href: '#' }
+          { label: 'Contact', href: 'https://www.linkedin.com/in/rania-haas/' }
         ]
       },
       {
         role: 'Payload Member',
         name: 'Aidan Eliason',
-        photo: placeholderPhoto,
+        photo: aidanEliason,
         contacts: [
-          { label: 'Contact', href: '#' },
-          { label: 'Contact', href: '#' }
+          { label: 'Contact', href: 'https://www.linkedin.com/in/aidaneliason/' }
         ]
       },
     ]
   };
 
-  const subTeams = [launchVehicleTeam, payloadTeam];
+  const subTeams = [execBoard, launchVehicleTeam, payloadTeam];
 </script>
-
-<svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-  <link
-    href="https://fonts.google.com/specimen/IBM+Plex+Sans+Devanagari?lang=en_Latn&preview.lang=en_Latn&categoryFilters=Feeling:%2FExpressive%2FBusiness"
-    rel="stylesheet"
-  />
-</svelte:head>
 
 <div class="page" style="background-image: url({bgPattern})">
 
@@ -221,15 +212,14 @@
       </div>
     </section>
 
-    <section class="stats-section">
-      <h2 class="stats-heading">Stats</h2>
-      <div class="red-panel stats-panel">
-        {#each stats as stat}
-          <div class="stat-pill">
-            {#if stat.value || stat.label}
-              <span class="stat-value">{stat.value}</span>
-              <span class="stat-label">{stat.label}</span>
-            {/if}
+    <!-- In Numbers -->
+    <section class="numbers">
+      <h2>In Numbers</h2>
+      <div class="numbers-row">
+        {#each numbers as n}
+          <div class="number">
+            <span class="number-value">{n.value}</span>
+            <span class="number-label">{n.label}</span>
           </div>
         {/each}
       </div>
@@ -238,46 +228,7 @@
     <section class="meet-team-outline">
       <h2 class="meet-team-heading">Meet the Team!</h2>
 
-      <div class="red-panel president-panel">
-        <article class="member-card president-card">
-          <div class="photo-box">
-            <img src={president.photo} alt={president.name} />
-          </div>
-          <h3 class="member-role">{president.role}</h3>
-          <div class="member-meta">
-            <span class="member-name">{president.name}</span>
-            <span class="member-contacts">
-              {#each president.contacts as c, i}
-                {#if i > 0}<span class="sep">|</span>{/if}
-                <a href={c.href}>{c.label}</a>
-              {/each}
-            </span>
-          </div>
-        </article>
-      </div>
 
-      <div class="red-panel">
-        <h3 class="panel-title">Executive Board</h3>
-        <div class="member-row">
-          {#each execBoard as member}
-            <article class="member-card">
-              <div class="photo-box">
-                <img src={member.photo} alt={member.name} />
-              </div>
-              <h4 class="member-role">{member.role}</h4>
-              <div class="member-meta">
-                <span class="member-name">{member.name}</span>
-                <span class="member-contacts">
-                  {#each member.contacts as c, i}
-                    {#if i > 0}<span class="sep">|</span>{/if}
-                    <a href={c.href}>{c.label}</a>
-                  {/each}
-                </span>
-              </div>
-            </article>
-          {/each}
-        </div>
-      </div>
 
       {#each subTeams as team}
         <div class="red-panel">
@@ -338,7 +289,6 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: var(--off-white);
-    font-family: 'Ubuntu Sans Mono', ui-monospace, monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -386,7 +336,6 @@
   .site-nav a {
     color: var(--off-white);
     text-decoration: none;
-    font-family: 'Ubuntu Sans Mono', ui-monospace, monospace;
     font-weight: 500;
     font-size: 1.05rem;
     letter-spacing: 0.02em;
@@ -402,6 +351,45 @@
     border-bottom-color: var(--accent-red);
   }
 
+  .numbers {
+    background: var(--charcoal);
+    color: var(--off-white);
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-top: 3rem;
+  }
+
+  .numbers h2 {
+    color: var(--off-white);
+    margin-bottom: 2.5rem;
+  }
+
+  .numbers-row {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .number {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .number-value {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--accent-red);
+    line-height: 1;
+  }
+
+  .number-label {
+    letter-spacing: 0.12em;
+    font-size: 0.85rem;
+  }
+
   @media (max-width: 800px) {
     .site-header {
       flex-direction: column;
@@ -410,6 +398,9 @@
     .site-nav ul {
       flex-wrap: wrap;
       gap: 1rem 1.25rem;
+    }
+    .numbers-row {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -425,7 +416,6 @@
   h2,
   h3,
   h4 {
-    font-family: 'Ubuntu Sans Mono', ui-monospace, monospace;
     font-weight: 700;
     margin: 0;
   }
@@ -519,64 +509,9 @@
     }
   }
 
-  /* ---------- Stats ---------- */
-  .stats-section {
-    margin-top: 3rem;
-  }
-
-  .stats-heading {
-    text-align: right;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .stats-panel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .stat-pill {
-    background: var(--off-white);
-    border: 1px solid #b8b8b8;
-    border-radius: 3rem;
-    flex: 1 1 12rem;
-    min-height: 8.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    color: #222;
-  }
-
-  .stat-value {
-    font-size: 1.6rem;
-    font-weight: 700;
-  }
-
-  .stat-label {
-    font-size: 0.85rem;
-    margin-top: 0.35rem;
-  }
-
-  .extra-info-box {
-    min-height: 6rem;
-    justify-content: center;
-    text-align: center;
-  }
+  
 
   /* ---------- Meet the Team outer container ---------- */
-  .meet-team-outline {
-    margin-top: 3rem;
-    border: 2px solid var(--off-white);
-    border-radius: 16px;
-    padding: 2rem;
-  }
-
   .meet-team-heading {
     text-align: center;
     font-size: 1.8rem;
@@ -595,47 +530,9 @@
   }
 
   .panel-title {
-    font-size: 1.3rem;
-    margin-bottom: 1.25rem;
+    font-size: 2.0 rem;
+    margin-bottom: 1.1rem;
     color: var(--off-white);
-  }
-
-  .president-panel {
-    display: flex;
-    justify-content: center;
-  }
-
-  .member-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.75rem;
-  }
-
-  .member-card {
-    background: var(--off-white);
-    color: #222;
-    border-radius: 4px;
-    padding: 1rem 1rem 1.1rem;
-    width: 12.5rem;
-    flex-shrink: 0;
-  }
-
-  .president-card,
-  .lead-card {
-    width: 17rem;
-  }
-
-  .member-card .photo-box {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    margin-bottom: 0.75rem;
-    color: #444;
-    font-size: 0.85rem;
-  }
-
-  .lead-photo {
-    aspect-ratio: 1 / 1;
   }
 
   .member-role {
@@ -647,14 +544,6 @@
     font-size: 1.1rem;
   }
 
-  .member-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-    border-left: 3px solid var(--accent-red);
-    padding-left: 0.6rem;
-    font-size: 0.85rem;
-  }
 
   .member-name {
     font-weight: 700;
@@ -680,4 +569,72 @@
       justify-content: center;
     }
   }
+
+.member-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-items: center;
+  align-items: start;
+}
+
+/*Cards */
+
+.member-card {
+  background: var(--off-white);
+  color: #222;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 16rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.lead-card {
+  max-width: 23rem;
+}
+
+.member-card .photo-box,
+.lead-card .photo-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+}
+
+
+.member-role {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.lead-label {
+  font-size: 1.15rem;
+}
+
+.member-meta {
+  border-left: 3px solid var(--accent-red);
+  padding-left: 0.6rem;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.red-panel {
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .member-row {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .member-row {
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  }
+}
+
+
 </style>

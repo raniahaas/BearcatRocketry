@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 :root {
   --ink: #4b4b4b;        /* page background */
   --charcoal: #27232a;   /* nav / dark surface */
@@ -19,6 +20,11 @@
 
 * { box-sizing: border-box; }
 
+.page {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -35,11 +41,16 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: var(--font-display);
-  font-weight: 600;
   margin: 0;
   line-height: 1.1;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
 }
+
+.site-nav a {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 
 p { line-height: 1.6; margin: 0 0 1em; }
 

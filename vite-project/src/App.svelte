@@ -12,8 +12,6 @@
    * 
    * 
   */
-  import { route } from './router.js';
-  import Nav from './nav.svelte';
   import Footer from './footer.svelte';
   import Home from './home.svelte';
   import About from './about.svelte';
